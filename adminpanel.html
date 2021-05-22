@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body style="background-image: linear-gradient(palegreen, lightpink,white)">
+<center>
+    <form action="/admin" method="POST" style="margin-top: 10px; padding-left: 10px; padding-right: 10px; margin-bottom: 200px;">
+        <fieldset style="background-image: linear-gradient(cornflowerblue,white)">
+            <h2> welcome To VJ Gas Agency</h2>
+            <table cellspacing="10", cellpadding="10">
+                <tr>
+                    <td><a href="/bookdetail">Check Booking Details</a></td><td><a href="/checkcomp">check user Complaint</a> </td></tr>
+                </table><hr>
+            {%for r in rows%}
+            <div align="left">
+                <h2>Admin Profile</h2>
+                <h4>Admin Name</h4> {{r[3]}}
+                <h4>EmployeeID</h4> {{r[2]}}
+            </div>{%endfor%}
+            <table>
+                <tr>
+                    <td colspan="2"><a href="alogout"><input type="button" value="logout" style="width: 250px;"></a></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</center>
+</body>
+</html>
