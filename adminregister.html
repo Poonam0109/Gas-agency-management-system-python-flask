@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> register Login Page</title>
+</head>
+<body style="background-image: linear-gradient(palegreen, lightpink,white)">
+<center>
+    <form action="/adminregister" method="POST" style="margin-top: 50px; padding-left: 100px; padding-right: 100px; margin-bottom: 50px;">
+        <fieldset style="background-image: linear-gradient(cornflowerblue,white)">
+            <h1>VJ Gas Agency</h1>
+            <h3>ADMIN REGISTER HERE</h3>
+            <table cellspacing="10" , cellpadding="10">
+                <tr>
+                    <td>Enter Employee ID</td>
+                    <td><input type="text" name="employeeid"></td>
+                </tr>
+                <tr>
+                    <td>Enter Name</td>
+                    <td><input type="text" name="employeename"></td>
+                </tr>
+                <tr>
+                    <td>Create Username</td>
+                    <td><input type="text" name="ausername"></td>
+                </tr>
+                <tr>
+                    <td>Create new Password</td>
+                    <td><input type="text" name="apassword"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="adminregister" value="register" style="width: 250px;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><a href="abtlogin"><input type="button" value="Back To admin Login Page" style="width: 250px;"></a></td>
+                </tr>
+            </table>
+            <div>
+                <p style="color: red">
+                {% if msg %}
+              {{ msg }}
+              {% endif %}
+                </p>
+            </div>
+        </fieldset>
+    </form>
+</center>
+</body>
+</html>
