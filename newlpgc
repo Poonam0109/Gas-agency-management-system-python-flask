@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lgp connection request</title>
+</head>
+<body style="background-image: linear-gradient(palegreen, lightpink,white)">
+<center>
+    <form action="/newlpgc" method="POST" style="margin-top: 10px; padding-left: 10px; padding-right: 10px; margin-bottom: 200px;">
+        <fieldset style="background-image: linear-gradient(cornflowerblue,white)">
+            <h2> VJ Gas Agency</h2>
+            <hr><div align="left">
+                <h2>REQUEST FOR NEW LPG CONNECTION</h2>
+                <table cellpadding="10", cellspacing="5">
+
+                    <tr>
+                    <td>Full Name</td>
+                    <td><input type="text" name="regfullname"></td>
+                </tr>
+                <tr>
+                    <td>Mobile number</td>
+                    <td><input type="text" name="regnumber"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" name="regaddress"></td>
+                </tr>
+                <tr>
+                    <td>PIN CODE</td>
+                    <td><input type="text" name="regpin"></td>
+                </tr>
+                <tr>
+                    <td>KYC Document No.</td>
+                    <td><input type="text" name="kycdetail"></td>
+                </tr><tr>
+                <td>Bass</td>
+                    <td><input type="text" name="kycdetail"></td></tr></table>
+        </div>
+            <table>
+                <tr>
+                    <td colspan="2" ><input type="submit" name="sbtnewcon" value="SUBMIT REQUEST" style="width: 250px;"></td>
+                </tr>
+
+                </table><hr>
+            <table>
+                <tr>
+                    <td colspan="2"><a href="home"><input type="button" value="back to home page" style="width: 250px;"></a></td>
+                </tr>
+                 </table>
+        </fieldset>
+    </form>
+</center>
+</body>
+</html>
