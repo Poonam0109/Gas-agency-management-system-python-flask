@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body style="background-image: linear-gradient(palegreen, lightpink,white)">
+<center>
+    <form action="/" method="POST" style="margin-top: 50px; padding-left: 300px; padding-right: 300px; margin-bottom: 50px;">
+        <fieldset style="background-image: linear-gradient(cornflowerblue,white)">
+            <h1>VJ gas agency</h1>
+            <h2>Login</h2>
+            <h4>user Login Panel</h4>
+            <table cellspacing="10", cellpadding="10">
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="logged_in" value="Login" style="width: 250px;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><a href="register"><input type="button" value="New user Register here" style="width: 250px;"></a></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><a href="adminlogin"><input type="button" value="Admin Login" style="width: 250px;"></a></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <p style="color: red">
+                {% if msg %}
+                {{ msg }}
+                {% endif %}
+            </p>
+</center>
+</body>
+</html>
