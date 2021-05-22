@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>complaint form</title>
+</head>
+<body style="background-image: linear-gradient(palegreen, lightpink,white)">
+<center>
+    <form action="complaintformuv" method="POST" style="margin-top: 10px; padding-left: 50px; padding-right: 50px; margin-bottom: 10px;">
+        <fieldset style="background-image: linear-gradient(cornflowerblue,white)">
+            <h1>VJ Gas Agency</h1><hr>
+            <div align="left">
+            <h4>COMPAINT FORM</h4>
+            <table cellspacing="10", cellpadding="10">
+                <tr>
+                    <td>Enter your Name</td>
+                    <td><input type="text" name="compusername"></td>
+                </tr>
+                <tr>
+                    <td>Enter your contact details</td>
+                    <td><input type="text" name="usercontact"></td>
+                </tr>
+                <tr>
+                    <td>Mention your complaint here</td>
+                    <td><input type="text" name="usercomp"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="#" value="submit form" style="width: 250px;"></td>
+                </tr>
+            </table></div>
+            <p style="color: red">
+                {% if msg %}
+              {{ msg }}
+              {% endif %}
+                </p>
+                 <table>
+                <tr>
+                    <td colspan="2"><a href="home"><input type="button" value="back to home page" style="width: 250px;"></a></td>
+                </tr>
+                 </table>
+        </fieldset>
+    </form>
+</center>
+</body>
+</html>
