@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body style="background-image: linear-gradient(palegreen, lightpink,white)">
+<center>
+    <form action="/register" method="POST" style="margin-top: 50px; padding-left: 100px; padding-right: 100px; margin-bottom: 50px;">
+        <fieldset style="background-image: linear-gradient(cornflowerblue,white)">
+            <h1>VJ Gas Agency</h1>
+            <h3>NEW USER REGISTER HERE</h3>
+            <table cellspacing="10", cellpadding="10">
+                <tr>
+                    <td>Full Name</td>
+                    <td><input type="text" name="fullname"></td>
+                </tr>
+                <tr>
+                    <td>Mobile number</td>
+                    <td><input type="text" name="number"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td>Create Username</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Create new Password</td>
+                    <td><input type="text" name="password"></td>
+                </tr>
+                <tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="register" value="register" style="width: 250px;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><a href="btlogin"><input type="button" value="Back To Login Page" style="width: 250px;"></a></td>
+                </tr>
+            </table>
+            <div>
+                <p style="color: red">
+                {% if msg %}
+              {{ msg }}
+              {% endif %}
+                </p>
+             </div>
+        </fieldset>
+    </form>
+</center>
+</body>
+</html>
