@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body style="background-image: linear-gradient(palegreen, lightpink,white)">
+<center>
+    <form action="/home" method="POST" style="margin-top: 10px; padding-left: 10px; padding-right: 10px; margin-bottom: 200px;">
+        <fieldset style="background-image: linear-gradient(cornflowerblue,white)">
+            <h2> welcome To VJ Gas Agency</h2>
+            <table cellspacing="10", cellpadding="10">
+                <tr>
+                    <td><a href="complaintformuv">Complaint form</a></td></tr>
+                </table><hr>
+            <div align="left">
+                <h2>User Profile</h2>
+                <table cellpadding="1", cellspacing="5">
+                    <tr>
+                        <td><h4>Name : </h4></td><td>{% for rows in rows%}<h4>{{ rows[2]}}</h4>{%endfor%}</td></tr>
+                </table>
+            </div><hr>
+            <div align="left">
+                <h2>Book a Cylinder</h2>
+
+                <table cellspacing="7", cellpadding="7">
+                <tr>
+                    <td>Enter correct name same as LPG registration</td>
+                    <td><input type="text" name="lpgusername"></td>
+                </tr>
+                <tr>
+                    <td>Enter Customer Username or UserID</td>
+                    <td><input type="text" name="userforbook"></td>
+                </tr>
+                    <tr>
+                        <td>Select the delivery date for gas cylinder</td>
+                        <td><input type = "date" name="bookdate"></td>
+                    </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="booked" value="Book Now" style="width: 250px;"></td>
+                </tr>
+                </table></div><hr>
+            <div align="left">
+                <h2>Booking history</h2>
+                <table>
+
+                </table>
+            </div>
+            <table>
+                <tr>
+                    <td colspan="2"><a href="logout"><input type="button" value="logout" style="width: 250px;"></a></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</center>
+</body>
+</html>
